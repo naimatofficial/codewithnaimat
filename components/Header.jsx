@@ -13,7 +13,7 @@ const Header = () => {
       <div className="border-white-500 inline-block w-full border-b py-5">
         <div className="block md:float-left">
           <Link href="/">
-            <span className="cursor-pointer text-4xl font-bold text-white">
+            <span className="cursor-pointer text-4xl font-bold text-black">
               CodeWithNaimat
             </span>
           </Link>
