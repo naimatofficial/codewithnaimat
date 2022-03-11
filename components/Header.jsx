@@ -12,9 +12,10 @@ const Header = () => {
     <div className="container mx-auto mb-8 px-20">
       <div className="border-white-500 inline-block w-full border-b py-5">
         <div className="block md:float-left">
-          <Link href="/">
-            <span className="cursor-pointer text-4xl font-bold text-white">
-              CodeWithNaimat
+          <Link href="https://codewithnaimat.vercel.app/">
+            <span className="cursor-pointer text-4xl font-bold text-white ">
+              CodeWith
+              <span className="text-pink-500">Naimat</span>
             </span>
           </Link>
         </div>

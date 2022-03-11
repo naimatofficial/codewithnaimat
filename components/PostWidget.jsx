@@ -25,13 +25,15 @@ const PostWidget = ({ categories, slug }) => {
       {relatedPosts.map((post) => (
         <div key={post.title} className="mb-4 flex w-full items-center py-2">
           <div className="w-16 flex-none">
-            <img
-              src={post.featuredImage.url}
-              alt={post.title}
-              height="50px"
-              width="50px"
-              className="rounded-full align-middle"
-            />
+            <Link href={`/post/${post.slug}`}>
+              <img
+                src={post.featuredImage.url}
+                alt={post.title}
+                height="100"
+                width="100"
+                className="h-14 w-14 cursor-pointer rounded-full border-2 border-cyan-300 object-cover"
+              />
+            </Link>
           </div>
           <div className="felx-grow ml-3 hover:text-gray-700">
             <p className="font-xs text-gray-500">
