@@ -54,6 +54,16 @@ const PostDetail = ({ post }) => {
             src={obj.src}
           />
         )
+      case 'bulleted-list':
+        return (
+          <ul key={index} className="ml-2 mb-4">
+            <li className="tex-md mb-1 font-semibold">
+              {modifiedText.map((item, i) => (
+                <React.Fragment key={i}>{item}</React.Fragment>
+              ))}
+            </li>
+          </ul>
+        )
       default:
         return modifiedText
     }
